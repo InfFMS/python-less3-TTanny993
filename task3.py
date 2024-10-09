@@ -3,18 +3,17 @@
 # (которые делятся только сами на себя и на 1), и сколько составных.
 t=0
 p=0
+x=0
 for i in range (1,1000):
     n=int(input())
-    x=0
     if n==0:
         break
     else:
-        for g in range (2,n):
-            for u in range(2,g):
-                if g%u==0:
-                    x=x+1
-            if x==0:
-                t=t+1
-            else:
-                p=p+1
+        for u in range(2,n):
+            if n%u==0:
+                x=x+1
+        if x==0:
+            t=t+1
+        else:
+            p=p+1
 print(t, p)

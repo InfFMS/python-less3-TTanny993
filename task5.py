@@ -3,17 +3,20 @@
 # которые являются степенями числа 2.
 # Вывести "нет", если таких чисел нет.
 t=0
-n=0
-for i in range (1,1000):
-    x=int(input())
-    while 2**1<x:
-        i=i+1
-    if x==2**i and x!=0:
-        t=t+x
-        n=n+1
-    if x==0:
-        break
-if n==0:
-    print('нет')
+p=0
+x=int(input())
+if x==0:
+    break
 else:
-    print(t/n)
+    n=0
+    while n<(x+1):
+        if 2**n==x:
+            t=t+x
+            p=p+1
+        n=n+1
+if p>0:
+    print(t/p)
+else:
+    print("нет")
+
+
