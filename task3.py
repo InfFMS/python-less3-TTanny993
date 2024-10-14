@@ -5,6 +5,7 @@ t=0
 p=0
 x=0
 for i in range (1,1000):
+    x=0
     n=int(input())
     if n==0:
         break

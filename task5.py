@@ -5,9 +5,8 @@
 t=0
 p=0
 x=int(input())
-if x==0:
-    break
-else:
+while x!=0:
+    x=int(input())
     n=0
     while n<(x+1):
         if 2**n==x:
