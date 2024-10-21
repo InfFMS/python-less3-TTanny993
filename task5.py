@@ -4,7 +4,13 @@
 # Вывести "нет", если таких чисел нет.
 t=0
 p=0
+n=0
 x=int(input())
+while n < (x + 1):
+    if 2 ** n == x:
+        t = t + x
+        p = p + 1
+    n = n + 1
 while x!=0:
     x=int(input())
     n=0

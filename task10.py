@@ -8,6 +8,7 @@ M=-1000
 m=1000
 y=int(input())
 for i in range (1,y+1):
+    x=0
     n=int(input())
     for u in range(2,n):
         if n%u==0:
@@ -16,7 +17,7 @@ for i in range (1,y+1):
         p=p+1
     if x==0 and n<m:
         m=n
-    elif x==0 and n>M:
+    if x==0 and n>M:
         M=n
 if p==0:
     print("Нет")
